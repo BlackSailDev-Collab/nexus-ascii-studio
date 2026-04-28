@@ -1,7 +1,7 @@
 # ASCII Studio 📟
 
 ASCII Studio is a high-performance, terminal-inspired web application designed for generating professional ASCII art banners. Built with a focus on speed and a retro-futuristic aesthetic, it allows users to transform raw signal data (text) into stylized visual outputs using a variety of classic figlet fonts.
- 
+ ```text
    ▄████████    ▄████████  ▄████████  ▄█   ▄█                  
   ███    ███   ███    ███ ███    ███ ███  ███                  
   ███    ███   ███    █▀  ███    █▀  ███▌ ███▌                 
@@ -19,7 +19,7 @@ ASCII Studio is a high-performance, terminal-inspired web application designed f
          ███     ███     ███    ███ ███    ███ ███  ███    ███ 
    ▄█    ███     ███     ███    ███ ███   ▄███ ███  ███    ███ 
  ▄████████▀     ▄████▀   ████████▀  ████████▀  █▀    ▀██████▀  
-                                                               
+```
 
 ## 🚀 Features
 
