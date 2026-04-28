@@ -1,0 +1,47 @@
+@import "./theme.css";
+@reference "./theme.css";
+
+@layer base {
+  body {
+    @apply bg-[#050505] text-text-base font-sans overflow-x-hidden;
+    background-image: 
+      radial-gradient(circle at 50% 50%, rgba(0, 255, 65, 0.02) 0%, transparent 100%),
+      linear-gradient(to bottom, #050505 0%, #000 100%);
+  }
+}
+
+@layer components {
+  /* CRT & Global Effects */
+  .scanline {
+    @apply pointer-events-none fixed inset-0 z-50 opacity-[0.03];
+    background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.5) 51%);
+    background-size: 100% 4px;
+  }
+
+  .monitor-glow {
+    @apply [text-shadow:0_0_15px_rgba(0,255,65,0.2)];
+  }
+
+  .crt-flicker {
+    animation: flicker 0.15s infinite;
+  }
+
+  @keyframes flicker {
+    0% { opacity: 0.98; }
+    50% { opacity: 1; }
+    100% { opacity: 0.99; }
+  }
+
+  /* Core Terminal Tokens */
+  .terminal-title {
+    @apply text-[9px] text-zinc-600 uppercase font-bold tracking-[0.3em];
+  }
+
+  .terminal-label {
+    @apply text-[11px] uppercase tracking-[0.2em] text-zinc-400 font-bold flex items-center gap-2;
+  }
+
+  .terminal-badge {
+    @apply text-[8px] border border-zinc-800 px-1 hover:bg-accent hover:text-black transition-colors uppercase tracking-widest font-black;
+  }
+}

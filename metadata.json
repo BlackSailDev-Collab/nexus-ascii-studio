@@ -1,0 +1,6 @@
+{
+  "name": "ASCII Studio",
+  "description": "A terminal-inspired web tool for generating banner-style ASCII art from text. Works offline with multiple font styles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

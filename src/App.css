@@ -1,0 +1,35 @@
+@import './global.css';
+@reference "tailwindcss";
+
+/* App-specific layout and advanced graphics */
+
+.app-container {
+  @apply min-h-screen bg-black text-text-base p-4 sm:p-8 md:p-12 selection:bg-accent selection:text-black;
+}
+
+.terminal-card:hover {
+  @apply border-zinc-700;
+}
+
+.output-grid-overlay {
+  @apply absolute inset-0 pointer-events-none opacity-[0.03];
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), 
+    linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.terminal-button {
+  @apply px-3 py-2 text-[10px] font-bold transition-all border shrink-0 uppercase tracking-tighter truncate;
+  @apply border-zinc-800/50 text-zinc-500 hover:border-accent hover:text-accent hover:bg-accent/5 active:scale-95;
+}
+
+.terminal-button-active {
+  @apply bg-accent text-black border-accent hover:bg-accent hover:text-black shadow-[0_0_10px_rgba(0,255,65,0.3)];
+}
+
+/* Noise overlay */
+.noise-overlay {
+  @apply fixed inset-0 pointer-events-none opacity-[0.04] mix-blend-screen z-50;
+  background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+}

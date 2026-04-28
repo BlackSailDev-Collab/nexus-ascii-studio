@@ -1,0 +1,34 @@
+@reference "tailwindcss";
+@reference "../theme.css";
+
+.container {
+  @apply flex flex-col sm:flex-row justify-between items-start sm:items-end border-b border-border-mid pb-4 sm:pb-6 mb-6 sm:mb-8 gap-4;
+}
+
+.titleWrapper {
+  @apply flex flex-col;
+}
+
+.systemLabel {
+  @apply text-[10px] text-zinc-500 tracking-[0.4em] uppercase mb-1 flex items-center gap-2 font-bold;
+}
+
+.statusIndicator {
+  @apply w-1.5 h-1.5 bg-accent rounded-full animate-pulse shadow-[0_0_8px_#00FF41];
+}
+
+.logo {
+  @apply text-4xl sm:text-6xl font-black leading-none tracking-tighter;
+}
+
+.stats {
+  @apply hidden md:flex gap-12 text-right;
+}
+
+.statItem {
+  @apply flex flex-col;
+}
+
+.statValue {
+  @apply text-sm font-bold text-zinc-300;
+}
