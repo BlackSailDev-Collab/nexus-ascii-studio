@@ -46,23 +46,31 @@ ASCII Studio is a high-performance, terminal-inspired web application designed f
 
 1. **Clone the repository**:
    ```bash
+   
    git clone <repository-url>
    cd ascii-studio
+   
    ```
 
 2. **Install dependencies**:
    ```bash
+   
    npm install
+   
    ```
 
 3. **Start the development server**:
    ```bash
+   
    npm run dev
+   
    ```
 
 4. **Build for production**:
    ```bash
+   
    npm run build
+   
    ```
 
 ## 🖥️ Usage
